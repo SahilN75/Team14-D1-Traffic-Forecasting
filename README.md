@@ -166,3 +166,20 @@ If you find this repository, e.g., the code and the datasets, useful in your res
   year={2018}
 }
 ```
+
+
+## Team 14 - Card D1 Checkpoint
+
+### Dataset and split files
+This checkpoint uses METR-LA. The dataset is not included in the repository archive. Place metr-la.h5 inside data/.
+
+Reviewed issue-time split files are stored in split_ids/: train_ids.csv, validation_ids.csv, test_ids.csv.
+
+### Smoke test
+Run from the repository root:
+```bash
+python checkpoint_smoke.py --data data/metr-la.h5
+```
+This checks data loading, baseline, GCN+GRU, shared LSTM, CNN, graph attention, attention ablation, and fusion on a small subset. It is a pipeline check, not a full experiment. No test metrics are computed.
+
+Smoke-test output: T14_D1_smoke_log.txt.

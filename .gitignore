@@ -101,3 +101,13 @@ ENV/
 
 # pycharm
 .idea/
+
+# Team 14 D1 local datasets and model checkpoints
+*.pt
+data/*.h5
+data/T14_D1_metr-la.csv
+
+# Local submission artifacts
+T14_D1_repo_checkpoint.zip
+T14_D1_runlog_clean.csv
+conda_error.txt

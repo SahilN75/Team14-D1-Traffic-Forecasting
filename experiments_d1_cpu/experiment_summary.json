@@ -1,0 +1,79 @@
+{
+  "device": "cpu",
+  "seed": 22,
+  "train_issue_count": 3995,
+  "validation_issue_count": 285,
+  "test_data_loaded": false,
+  "fit_summaries": [
+    {
+      "component": "cnn2d",
+      "seed": 22,
+      "train_issue_count": 3995,
+      "validation_issue_count": 285,
+      "epochs_completed": 30,
+      "updates": 3750,
+      "stop_reason": "epochs",
+      "elapsed_s": 118.27,
+      "cpu_s": 457.17,
+      "peak_mem_mb": 925.21,
+      "threads": 10,
+      "workers": 0,
+      "trainable_params": 2675,
+      "best_epoch": 30,
+      "best_validation_masked_mae_scaled": 0.3854317367076874,
+      "checkpoint": "C:\\Users\\sahil\\OneDrive\\Documents\\DL WEEKLY\\DCRNN_Official\\experiments_d1_cpu\\cnn2d_best.pt",
+      "metrics_file": "C:\\Users\\sahil\\OneDrive\\Documents\\DL WEEKLY\\DCRNN_Official\\experiments_d1_cpu\\cnn2d_validation_metrics.csv"
+    },
+    {
+      "component": "graph_attention",
+      "seed": 22,
+      "train_issue_count": 3995,
+      "validation_issue_count": 285,
+      "epochs_completed": 14,
+      "updates": 1750,
+      "stop_reason": "early_stop",
+      "elapsed_s": 17.52,
+      "cpu_s": 65.86,
+      "peak_mem_mb": 934.98,
+      "threads": 10,
+      "workers": 0,
+      "trainable_params": 195,
+      "best_epoch": 9,
+      "best_validation_masked_mae_scaled": 0.44506070017814636,
+      "checkpoint": "C:\\Users\\sahil\\OneDrive\\Documents\\DL WEEKLY\\DCRNN_Official\\experiments_d1_cpu\\graph_attention_best.pt",
+      "metrics_file": "C:\\Users\\sahil\\OneDrive\\Documents\\DL WEEKLY\\DCRNN_Official\\experiments_d1_cpu\\graph_attention_validation_metrics.csv"
+    },
+    {
+      "component": "attention_ablation",
+      "seed": 22,
+      "train_issue_count": 3995,
+      "validation_issue_count": 285,
+      "epochs_completed": 23,
+      "updates": 2875,
+      "stop_reason": "early_stop",
+      "elapsed_s": 8.03,
+      "cpu_s": 24.86,
+      "peak_mem_mb": 934.99,
+      "threads": 10,
+      "workers": 0,
+      "trainable_params": 99,
+      "best_epoch": 18,
+      "best_validation_masked_mae_scaled": 0.4968411922454834,
+      "checkpoint": "C:\\Users\\sahil\\OneDrive\\Documents\\DL WEEKLY\\DCRNN_Official\\experiments_d1_cpu\\attention_ablation_best.pt",
+      "metrics_file": "C:\\Users\\sahil\\OneDrive\\Documents\\DL WEEKLY\\DCRNN_Official\\experiments_d1_cpu\\attention_ablation_validation_metrics.csv"
+    }
+  ],
+  "fusion_summary": {
+    "component": "fusion",
+    "method": "fixed 50/50 prediction average",
+    "training_performed": false,
+    "inputs": [
+      "existing gcngru_best.pt",
+      "existing shared_lstm_best.pt"
+    ],
+    "validation_issue_count": 285,
+    "elapsed_s": 1.0491,
+    "test_metrics_computed": false,
+    "metrics_file": "C:\\Users\\sahil\\OneDrive\\Documents\\DL WEEKLY\\DCRNN_Official\\experiments_d1_cpu\\fusion_gcn_gru_shared_lstm_validation_metrics.csv"
+  }
+}

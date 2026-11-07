@@ -18,7 +18,7 @@ OUT = Path("baseline_results")
 OUT.mkdir(parents=True, exist_ok=True)
 
 ORDER = (2, 0, 1)
-K = 20
+K = 207
 
 HORIZONS = [
     (15, "target_15min_row", 3),
@@ -281,7 +281,7 @@ result_df.to_csv(results_path, index=False)
 elapsed = time.perf_counter() - wall_start
 scale = S / sensors_run
 
-print("\nARIMA(2,0,1) validation results — first 20 sensors")
+print("\nARIMA(2,0,1) validation results — all 207 sensors")
 print(result_df.to_string(index=False))
 
 print(f"\nFit elapsed: {fit_seconds:.2f} s")
